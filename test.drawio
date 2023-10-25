@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-10-25T11:33:01.622Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="6AZ0k-jk1jrbCOd4-9W1" version="22.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-10-25T13:02:38.918Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="_mVkd51qVLJg9Ap6kR-C" version="22.0.7" type="github">
   <diagram name="Page-1" id="FUET0nqOS0AxgLeTutau">
-    <mxGraphModel dx="855" dy="495" grid="0" gridSize="10" guides="1" tooltips="0" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1255" dy="495" grid="0" gridSize="10" guides="1" tooltips="0" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -612,6 +612,90 @@
         </mxCell>
         <mxCell id="fDdwfDi1KVoTNDwFbT7Y-213" value="String() string&lt;br&gt;返回字节的字符串" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="292" y="2120" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-214" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="39" y="2218" width="180" height="370" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-215" value="maxBytes int64&lt;br&gt;缓存可存最大字节" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="56.5" y="2248" width="145" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-216" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="289" y="2248" width="140" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-217" value="&lt;b&gt;Cache&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="99" y="2218" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-218" value="nBytes int64&lt;br&gt;已使用字节" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="56.5" y="2308" width="145" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-219" value="ll&amp;nbsp;*list.List&lt;br&gt;维护的双向链表" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="56.5" y="2368" width="145" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-220" value="cache&amp;nbsp; &amp;nbsp; map[string]*list.Element&lt;br&gt;核心字典 value是链表结点" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="56.5" y="2428" width="145" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-221" value="OnEvicted&lt;br&gt;func(key string, value Value)&lt;br&gt;&lt;span style=&quot;background-color: rgb(255, 255, 255); color: rgb(8, 8, 8); font-family: Menlo-Regular, monospace; font-size: 9.8pt;&quot;&gt;某条记录被移除时的回调函数&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="51.5" y="2498" width="155" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-222" value="&lt;b&gt;entry&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="334" y="2248" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-223" value="key string&lt;br&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="299" y="2278" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-224" value="value Value" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="299" y="2328" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-225" value="&lt;b&gt;链表结点数据类型&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="299" y="2378" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-226" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="504" y="2293" width="140" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-227" value="&lt;b&gt;Value interface{}&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="514" y="2293" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-228" value="Len() int" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="514" y="2323" width="120" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-229" value="&lt;b&gt;兼容链表结点Value接口&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="499" y="2373" width="150" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-230" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fDdwfDi1KVoTNDwFbT7Y-224" target="fDdwfDi1KVoTNDwFbT7Y-226">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="379" y="2368" as="sourcePoint" />
+            <mxPoint x="499" y="2348" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-231" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="fDdwfDi1KVoTNDwFbT7Y-219" target="fDdwfDi1KVoTNDwFbT7Y-216">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="429" y="2357" as="sourcePoint" />
+            <mxPoint x="514" y="2356" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-232" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="-196" y="2291" width="180" height="213" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-233" value="mu&amp;nbsp; sync.Mutex&lt;br&gt;用于同步" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-178.5" y="2321" width="145" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-234" value="&lt;b&gt;cache&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-132" y="2293" width="52" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-235" value="lru&amp;nbsp; *lru.Cache&lt;br&gt;原有缓存主数据结构" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;" vertex="1" parent="1">
+          <mxGeometry x="-178.5" y="2381" width="145" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-236" value="cacheBytes int64&lt;br&gt;缓存大小（maxBytes）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-178.5" y="2441" width="145" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-239" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fDdwfDi1KVoTNDwFbT7Y-235" target="fDdwfDi1KVoTNDwFbT7Y-214">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="212" y="2403" as="sourcePoint" />
+            <mxPoint x="299" y="2338" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-240" value="&lt;b&gt;最终存储数据结构&lt;/b&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-166" y="2260" width="114" height="26" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
