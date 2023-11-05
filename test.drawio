@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-05T03:24:10.636Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="mAX7eD0p8peFeSqn-qLC" version="22.0.7" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-05T03:42:08.291Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="Mv5RHXIIBzgI8klyIHF5" version="22.0.7" type="github">
   <diagram name="Page-1" id="FUET0nqOS0AxgLeTutau">
     <mxGraphModel dx="1970" dy="654" grid="0" gridSize="10" guides="1" tooltips="0" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -2488,6 +2488,9 @@
         </mxCell>
         <mxCell id="fDdwfDi1KVoTNDwFbT7Y-951" value="&lt;font size=&quot;1&quot; color=&quot;#ff0000&quot; style=&quot;&quot;&gt;&lt;b style=&quot;font-size: 15px;&quot;&gt;睡眠/销毁&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="680.47" y="8857" width="82" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fDdwfDi1KVoTNDwFbT7Y-953" value="操作系统调度器" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="-690.88" y="8558" width="468" height="28" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
