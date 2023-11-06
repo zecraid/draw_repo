@@ -1,9 +1,36 @@
-<mxfile host="app.diagrams.net" modified="2023-11-06T07:12:08.202Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" version="22.0.7" etag="3obVkqsMlimKtV03QUEZ" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-06T07:25:11.715Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="-59vTA_-O-O6zzP2yrye" version="22.0.8" type="github">
   <diagram name="第 1 页" id="C3X3902rSs_FzPN9natc">
-    <mxGraphModel>
+    <mxGraphModel dx="1404" dy="785" grid="0" gridSize="10" guides="1" tooltips="0" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-2" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;私钥&lt;br&gt;&lt;/font&gt;&lt;/b&gt;0x5c3e20a2a1f93ed44e3721d0633a9ebc42e93599ac78804a872ed90a535a7ac3&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="252" y="193" width="462" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-3" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;公钥&lt;br&gt;&lt;/font&gt;&lt;/b&gt;0x04534f614beec2c68e9a11d3f9dd6df63c2a58bdfc697b764aa1c2c4b6a8f1eaf764&lt;br&gt;8044511713e94a6102266c3ddbe26140d50738c5c7d34d25d9f9cd065096a2c&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="252" y="279" width="462" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-4" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;共识机制&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="242" y="548" width="149" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-5" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;PoW&lt;br&gt;工作量证明&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="485" width="149" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-6" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;BFT&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;&lt;b&gt;拜占庭容错&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="572" width="149" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-8" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;PBFT&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;&lt;b&gt;实用拜占庭容错&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="659" width="149" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-9" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;PoS&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;&lt;b&gt;权益证明&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="423" y="746" width="149" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-10" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;DPOS&lt;/b&gt;&lt;br&gt;&lt;span style=&quot;&quot;&gt;&lt;b&gt;委托权益证明&lt;/b&gt;&lt;/span&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="827" width="149" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-11" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;PoST&lt;br&gt;共识空间证明&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="911" width="149" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
