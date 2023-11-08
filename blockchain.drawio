@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2023-11-08T01:56:34.652Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="bwi6f3ifYVpsQ9Z0eP1F" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-08T10:58:20.082Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="I1PhukZ00yowYFFlFIzI" version="22.0.8" type="github">
   <diagram name="第 1 页" id="C3X3902rSs_FzPN9natc">
-    <mxGraphModel dx="1804" dy="785" grid="0" gridSize="10" guides="1" tooltips="0" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+    <mxGraphModel dx="1657" dy="714" grid="0" gridSize="10" guides="1" tooltips="0" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -346,7 +346,7 @@
           <mxGeometry x="520" y="5454" width="186" height="37" as="geometry" />
         </mxCell>
         <mxCell id="2Zn7NYw-day8lMCWBlDq-130" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="335" y="5534" width="584" height="659" as="geometry" />
+          <mxGeometry x="335" y="5534" width="584" height="491" as="geometry" />
         </mxCell>
         <mxCell id="2Zn7NYw-day8lMCWBlDq-131" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;交易版本号&lt;b&gt;（4字节）&lt;/b&gt;version uint32&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="424" y="5552" width="392" height="60" as="geometry" />
@@ -355,7 +355,7 @@
           <mxGeometry x="424" y="5628" width="392" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2Zn7NYw-day8lMCWBlDq-133" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;从数据中解析流程：&lt;br&gt;1. 读取4个字节版本号&lt;br&gt;2. 解析varint，得到输入数量n&lt;br&gt;3. 执行1～n次循环，解析交易输入&lt;br&gt;4. 解析varint，得到输出数量m&lt;br&gt;5. 执行1～m次循环，解析交易输出&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="976" y="5395" width="357" height="108" as="geometry" />
+          <mxGeometry x="984" y="5536" width="357" height="182" as="geometry" />
         </mxCell>
         <mxCell id="2Zn7NYw-day8lMCWBlDq-134" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;交易输入&lt;b&gt;（4字节）&lt;/b&gt;tx_in tx_in&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="423" y="5704" width="392" height="60" as="geometry" />
@@ -368,6 +368,99 @@
         </mxCell>
         <mxCell id="2Zn7NYw-day8lMCWBlDq-137" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;锁定时间&lt;b&gt;（&lt;/b&gt;4字节&lt;b&gt;）&lt;/b&gt;lock_time&amp;nbsp;uint32&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="423" y="5932" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-138" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;&lt;b&gt;比特币交易&lt;/b&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;输入&lt;/b&gt;&lt;b&gt;结构&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="529.75" y="6056" width="207" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-139" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="6103" width="584" height="410" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-140" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;交易哈希&lt;b&gt;（32字节）&lt;/b&gt;transactionHash &lt;font color=&quot;#ff0000&quot;&gt;char[]&lt;/font&gt;&lt;br&gt;指向待花费的UTXO指针&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="424" y="6123" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-141" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;输出索引&lt;b&gt;（4字节）&lt;/b&gt;outputIndex&amp;nbsp;&lt;br&gt;UTXO编号，从0开始&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="423" y="6197" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-142" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;解锁脚本大小&lt;b&gt;（1-9字节 Var Int）unlockingScriptSize&lt;/b&gt;&amp;nbsp;&lt;br&gt;紧跟的解锁脚本的长度&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="424" y="6274" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-143" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;解锁脚本&lt;b&gt;（可变长度）unlockingScript&lt;/b&gt;&amp;nbsp;&lt;br&gt;满足UTXO锁定脚本条件的解锁脚本&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="425" y="6351" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-144" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;序号&lt;b&gt;（4字节）sequenceNumber&lt;/b&gt;&amp;nbsp;&lt;br&gt;目前未被使用的交易替换功能，设置为0xFFFFFFF&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="424" y="6423" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-145" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;一旦UTXO选定后，钱包应用便开始创建包含每个UTXO签名的解锁脚本，使它们满足锁定脚本的条件，从而可以花费。钱包应用加入这些UTXO的引用和解锁脚本作为交易输入。&lt;/font&gt;" style="text;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="984" y="6097" width="558" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-146" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;&lt;b&gt;比特币交易输出结构&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="499.5" y="6538" width="207" height="37" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-148" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="335" y="6584" width="584" height="255" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-149" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;数量&lt;b&gt;（4字节）&lt;/b&gt;Number&amp;nbsp;&lt;br&gt;以聪为单位的比特币价值&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="424" y="6604" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-151" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;解锁脚本大小&lt;b&gt;（1-9字节 Var Int）unlockingScriptSize&lt;/b&gt;&amp;nbsp;&lt;br&gt;用字节表示后续锁定脚本长度&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="423" y="6681" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-152" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;解锁脚本&lt;b&gt;（可变长度）unlockingScript&lt;/b&gt;&amp;nbsp;&lt;br&gt;定义花费输出所需条件的脚本&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="423" y="6757" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-154" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;交易输出包含两部分：&lt;br&gt;&amp;nbsp;●比特币金额，“聪”的任意倍数，“聪”是比特币的最小单位。&lt;br&gt;&amp;nbsp;●锁定脚本，也被称为“受限”，通过指定花费输出必须符合某种条件，&lt;br&gt;将这个金额锁定。&lt;/font&gt;" style="text;html=1;align=left;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="969" y="6575" width="568" height="98" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-156" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;tx1&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="328" y="7298" width="96" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-164" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;tx2&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="486" y="7298" width="96" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-165" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Hash(tx1)&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="328" y="7255" width="96" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-166" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Hash(tx2)&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="486" y="7255" width="96" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-169" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;tx3&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="651" y="7298" width="96" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-170" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;tx4&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="809" y="7298" width="96" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-171" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Hash(tx3)&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="651" y="7255" width="96" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-172" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Hash(tx4)&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="809" y="7255" width="96" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-173" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;tx5&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="7298" width="96" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-174" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;tx2&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1118" y="7298" width="96" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-175" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Hash(tx5)&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="960" y="7255" width="96" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-176" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Hash(tx2)&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1118" y="7255" width="96" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-177" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;tx1&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1283" y="7298" width="96" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-178" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;tx2&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1441" y="7298" width="96" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-179" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Hash(tx1)&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1283" y="7255" width="96" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-180" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Hash(tx2)&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1441" y="7255" width="96" height="43" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-181" value="&lt;font style=&quot;&quot;&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;Hash(tx1)&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="419" y="7150" width="96" height="43" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
