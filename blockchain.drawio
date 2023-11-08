@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-08T00:28:41.778Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="2iPCuN9LQGoJNa52AYm7" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-08T00:52:26.344Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="fi5yBGIDRukz9LAjwlGA" version="22.0.8" type="github">
   <diagram name="第 1 页" id="C3X3902rSs_FzPN9natc">
     <mxGraphModel dx="1404" dy="785" grid="0" gridSize="10" guides="1" tooltips="0" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -41,34 +41,34 @@
           <mxGeometry x="136" y="2084" width="523" height="401" as="geometry" />
         </mxCell>
         <mxCell id="2Zn7NYw-day8lMCWBlDq-15" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="962" y="991" width="189" height="275" as="geometry" />
+          <mxGeometry x="777" y="1246" width="331" height="275" as="geometry" />
         </mxCell>
         <mxCell id="2Zn7NYw-day8lMCWBlDq-16" value="&lt;b&gt;&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;&lt;/b&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1215" y="985" width="189" height="275" as="geometry" />
         </mxCell>
-        <mxCell id="2Zn7NYw-day8lMCWBlDq-17" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="188" y="1311" width="451" height="461" as="geometry" />
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-17" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="200" y="904" width="451" height="499" as="geometry" />
         </mxCell>
         <mxCell id="2Zn7NYw-day8lMCWBlDq-18" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;区块大小（4字节）&lt;br&gt;&lt;/b&gt;当前区块的大小&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="213" y="1230" width="401" height="60" as="geometry" />
+          <mxGeometry x="162" y="1584" width="401" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="2Zn7NYw-day8lMCWBlDq-20" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;版本（4字节）&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="213" y="1320" width="392" height="60" as="geometry" />
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-20" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;版本（4字节）&lt;/b&gt;Version&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="951" width="392" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="2Zn7NYw-day8lMCWBlDq-21" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;前一个区块Hash（32字节）&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="213" y="1389" width="392" height="60" as="geometry" />
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-21" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;前一个区块Hash（32字节）&lt;/b&gt;PreviousBlockHash&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="1020" width="392" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="2Zn7NYw-day8lMCWBlDq-22" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;默克尔树根的Hash（32字节）&lt;br&gt;&lt;/b&gt;对所有区块中的交易创建一棵默克尔树，计算树根Hash&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="213" y="1460" width="392" height="60" as="geometry" />
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-22" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;默克尔树根的Hash（32字节）&lt;/b&gt;MerkleRoot&lt;b&gt;&lt;br&gt;&lt;/b&gt;对所有区块中的交易创建一棵默克尔树，计算树根Hash&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="1091" width="392" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="2Zn7NYw-day8lMCWBlDq-23" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;时间戳（4字节）&lt;br&gt;&lt;/b&gt;区块创建的时间&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="213" y="1533" width="392" height="60" as="geometry" />
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-23" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;时间戳（4字节）&lt;/b&gt;Time&lt;b&gt;&lt;br&gt;&lt;/b&gt;区块创建的时间&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="1164" width="392" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="2Zn7NYw-day8lMCWBlDq-24" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;难度目标（4字节）&lt;br&gt;&lt;/b&gt;区块的工作量证明难度目标&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="213" y="1606" width="392" height="60" as="geometry" />
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-24" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;难度目标（4字节）&lt;/b&gt;Bits&lt;b&gt;&lt;br&gt;&lt;/b&gt;区块的工作量证明难度目标&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="1237" width="392" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="2Zn7NYw-day8lMCWBlDq-25" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;Nonce（4字节）&lt;br&gt;&lt;/b&gt;用于工作量证明算法的一个扰动输入参数&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="213" y="1679" width="392" height="60" as="geometry" />
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-25" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;随机数（4字节）&lt;/b&gt;Nonce&lt;b&gt;&lt;br&gt;&lt;/b&gt;用于工作量证明算法的一个扰动输入参数&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="225" y="1310" width="392" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2Zn7NYw-day8lMCWBlDq-28" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;收支记录1&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="195" y="2134" width="392" height="60" as="geometry" />
@@ -83,12 +83,12 @@
           <mxGeometry x="213" y="1795" width="392" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2Zn7NYw-day8lMCWBlDq-33" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="728" y="1767" width="451" height="461" as="geometry" />
+          <mxGeometry x="728" y="1767" width="451" height="793" as="geometry" />
         </mxCell>
-        <mxCell id="2Zn7NYw-day8lMCWBlDq-34" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;版本（4字节）&lt;br&gt;&lt;/b&gt;该比特币协议的版本号&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-34" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;生成时间（4字节）&lt;br&gt;&lt;/b&gt;本次交易嵌入到区块中的时间&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="757.5" y="1778" width="392" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="2Zn7NYw-day8lMCWBlDq-35" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;支出交易数量统计（4字节）&lt;br&gt;&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-35" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;引用交易的Hash值（32字节）&lt;br&gt;&lt;/b&gt;本次交易的默克尔结点的Hash值，来确定交易有没有被伪造或者重复&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="757.5" y="1846" width="392" height="60" as="geometry" />
         </mxCell>
         <mxCell id="2Zn7NYw-day8lMCWBlDq-36" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;收支记录表&lt;/b&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
@@ -99,6 +99,42 @@
         </mxCell>
         <mxCell id="2Zn7NYw-day8lMCWBlDq-38" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;......&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="353" y="2360" width="48" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-39" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;交易记录索引编号（4字节）&lt;br&gt;&lt;/b&gt;本次交易的索引编号，该编号作为交易地址的查询入口&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="757.5" y="1917" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-40" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;比特币支出地址（16字节）&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="757.5" y="1988" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-41" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;支出地址数量（4字节）&lt;br&gt;&lt;/b&gt;本次交易中比特币支出地址的数量&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="757.5" y="2059" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-42" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;版本（4字节）&lt;br&gt;&lt;/b&gt;比特币协议的版本号&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="757.5" y="2130" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-43" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;本次交易的数字签名（不确定）&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="757.5" y="2201" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-44" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;比特币接收地址（16字节）&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="757.5" y="2275" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-45" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;接收地址数量（4字节）&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="759" y="2349" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-46" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;该条记录的大小（大于2字节）&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="761" y="2423" width="392" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-47" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;区块头（80字节）&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="799" y="1259" width="295.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-48" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;b&gt;区块体（从第81字节开始）&lt;/b&gt;&lt;br&gt;&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="799" y="1333" width="295.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-49" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;80字节&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="94" y="1187" width="74" height="34" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-50" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;区块头&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="396" y="914" width="72" height="34" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
