@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-11T12:50:20.662Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="nh14fmt41_x5iaogFYZm" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-11T12:51:02.128Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="QwvD1HRlV8fyUfdYdRwk" version="22.0.8" type="github">
   <diagram name="第 1 页" id="C3X3902rSs_FzPN9natc">
     <mxGraphModel dx="3080" dy="1318" grid="0" gridSize="10" guides="1" tooltips="0" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -2002,6 +2002,9 @@
         </mxCell>
         <mxCell id="2Zn7NYw-day8lMCWBlDq-812" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;行为上报/下载&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontStyle=1" vertex="1" parent="1">
           <mxGeometry x="2050" y="18073" width="175" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-813" value="&lt;font style=&quot;font-size: 25px;&quot;&gt;KYC流程&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1142" y="17591" width="278" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
