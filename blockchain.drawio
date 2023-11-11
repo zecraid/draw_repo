@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2023-11-11T07:03:27.234Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="0fd5buXa6WUMCrlsNP4e" version="22.0.8" type="github">
+<mxfile host="app.diagrams.net" modified="2023-11-11T07:05:15.173Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36" etag="cf3yS7qGwTRSV_W2Aqug" version="22.0.8" type="github">
   <diagram name="第 1 页" id="C3X3902rSs_FzPN9natc">
     <mxGraphModel dx="2680" dy="1318" grid="0" gridSize="10" guides="1" tooltips="0" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
       <root>
@@ -1339,26 +1339,35 @@
         <mxCell id="2Zn7NYw-day8lMCWBlDq-521" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;认证与身份管理&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
           <mxGeometry x="1525.5" y="13080" width="228" height="84" as="geometry" />
         </mxCell>
-        <mxCell id="2Zn7NYw-day8lMCWBlDq-522" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;测试管理&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-522" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;授权管理&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
           <mxGeometry x="1525.5" y="13190" width="228" height="84" as="geometry" />
         </mxCell>
-        <mxCell id="2Zn7NYw-day8lMCWBlDq-523" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;构建管理&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-523" value="安全策略管理" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
           <mxGeometry x="1525.25" y="13311" width="228" height="84" as="geometry" />
         </mxCell>
         <mxCell id="2Zn7NYw-day8lMCWBlDq-524" value="&lt;span style=&quot;font-size: 25px;&quot;&gt;&lt;b&gt;安全&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="1604.5" y="13025" width="68" height="42" as="geometry" />
         </mxCell>
-        <mxCell id="2Zn7NYw-day8lMCWBlDq-525" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;支付管理&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-525" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;隐私保护&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
           <mxGeometry x="1524.38" y="13419" width="228" height="84" as="geometry" />
         </mxCell>
-        <mxCell id="2Zn7NYw-day8lMCWBlDq-526" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;跨链服务管理&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-526" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;版本保护&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
           <mxGeometry x="1524.38" y="13529" width="228" height="84" as="geometry" />
         </mxCell>
-        <mxCell id="2Zn7NYw-day8lMCWBlDq-527" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;账本管理&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-527" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;可用性管理&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
           <mxGeometry x="1524.13" y="13650" width="228" height="84" as="geometry" />
         </mxCell>
-        <mxCell id="2Zn7NYw-day8lMCWBlDq-528" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;成员管理&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
-          <mxGeometry x="1524.13" y="13771" width="228" height="84" as="geometry" />
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-529" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1898.5" y="13012" width="286.5" height="866" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-530" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;治理支持&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="1929" y="13080" width="228" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-531" value="&lt;span style=&quot;font-size: 23px;&quot;&gt;审计支持&lt;/span&gt;" style="rounded=0;whiteSpace=wrap;html=1;fontSize=23;" vertex="1" parent="1">
+          <mxGeometry x="1929" y="13190" width="228" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="2Zn7NYw-day8lMCWBlDq-533" value="&lt;span style=&quot;font-size: 25px;&quot;&gt;&lt;b&gt;治理与审计&lt;/b&gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="1971" y="13025" width="143" height="42" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
