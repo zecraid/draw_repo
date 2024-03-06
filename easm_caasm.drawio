@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-06T09:53:28.965Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="SHIQl_naW8LGT8ksmbmM" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-06T10:01:44.208Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="7yUOUvOP4OuJ3CBE-lkw" version="24.0.2" type="github">
   <diagram name="第 1 页" id="qW4DOj6AgRY8q806XMH-">
     <mxGraphModel dx="1891" dy="538" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -178,7 +178,7 @@
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-56" value="如果某条边的name被修改了，那么就更新为新的name" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="762" y="832" width="209" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-58" value="获取这条关系的from和to，如果from和to的tag发生了变化，那么from和to记录旧的name" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-58" value="将要添加的边记录到addRelations，这里面的边的from和to都是更新后的节点，然后ID=0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="762" y="915" width="209" height="49" as="geometry" />
         </mxCell>
       </root>
