@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-06T06:59:57.195Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="G0mF_hMFnEtVS0lxjFVk" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-06T07:30:02.032Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="xUR3P5hsVoY-zp6cTd49" version="24.0.2" type="github">
   <diagram name="第 1 页" id="qW4DOj6AgRY8q806XMH-">
     <mxGraphModel dx="1891" dy="538" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -54,6 +54,12 @@
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-17" value="调用biz/vault/model/model.go的UpdateAssetModel()更新资产结构" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="13" y="926" width="236" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-19" value="获取最新的资产结构：&lt;div&gt;最终会走到internal/data/vault.go下的&lt;span style=&quot;background-color: initial;&quot;&gt;GetLatestModel&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1、获取最近的版本号&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2、根据版本号找到边&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3、根据nodes字段找点&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;4、组合返回&lt;/span&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="398" y="39" width="321" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-20" value="将请求中的节点与最新的资产结构进行对比，找出新增的节点和需要删除的节点（最新的资产结构中有，但是请求参数节点中没有）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="399" y="215" width="331" height="110" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
