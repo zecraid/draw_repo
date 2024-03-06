@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-06T12:50:47.806Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="cX_XXm-u-bem07bxa_Th" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-06T13:24:58.031Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="OrwNoxoI1gdmWl55roNo" version="24.0.2" type="github">
   <diagram name="第 1 页" id="qW4DOj6AgRY8q806XMH-">
     <mxGraphModel dx="2079" dy="633" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -249,8 +249,17 @@
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-81" value="&lt;div&gt;逐个遍历新节点，如果节点的Source为空（未指定文件）则跳过该节点&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="535" y="1412" width="190" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-83" value="&lt;div&gt;若该节点绑定了文件，则提取节点数据：提取数据前需要先对节点的属性进行判断：&lt;/div&gt;&lt;div&gt;1、&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="455" y="1512" width="348" height="60" as="geometry" />
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-86" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-83" target="Nk9I9D9MLdTbFCqx6Xnm-85">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-83" value="&lt;div&gt;若该节点绑定了文件，则提取节点数据：提取数据前需要先对节点的属性进行判断：&lt;/div&gt;&lt;div&gt;1、主键不能为空（前端做了判断）&lt;/div&gt;&lt;div&gt;2、不同属性不能拥有文件中相同的列&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="455" y="1512" width="348" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-85" value="从文件中读取所需列的数据" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="533" y="1628" width="191" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-87" value="对主键进行去重：&lt;div&gt;1、如果主键数据为空，记录该行的错误信息到dataErr&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="432" y="1731" width="396" height="62" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
