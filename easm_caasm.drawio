@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-06T14:21:11.698Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="ulHijI4JAr_VuXfM-WCS" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-06T14:31:28.713Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="lUiZGmaosdxRbBjBuasJ" version="24.0.2" type="github">
   <diagram name="第 1 页" id="qW4DOj6AgRY8q806XMH-">
     <mxGraphModel dx="2079" dy="633" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -255,7 +255,7 @@
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-90" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-83" target="Nk9I9D9MLdTbFCqx6Xnm-89">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-83" value="&lt;div&gt;若该节点绑定了文件，则提取节点数据：提取数据前需要先对节点的属性进行判断：&lt;/div&gt;&lt;div&gt;1、主键不能为空（前端做了判断）&lt;/div&gt;&lt;div&gt;2、不同属性不能拥有文件中相同的列&lt;/div&gt;&lt;div&gt;提取数据流程：&lt;/div&gt;&lt;div&gt;1、从文件中读取所需列的数据&lt;/div&gt;&lt;div&gt;2、逐条读取数据，若主键为空，记录该错误；然后对主键进行去重&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-83" value="&lt;div&gt;若该节点绑定了文件，则提取节点数据：提取数据前需要先对节点的属性进行判断：&lt;/div&gt;&lt;div&gt;1、主键不能为空（前端做了判断）&lt;/div&gt;&lt;div&gt;2、不同属性不能拥有文件中相同的列&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;提取数据流程&lt;/font&gt;&lt;/b&gt;：&lt;/div&gt;&lt;div&gt;1、从文件中读取所需列的数据&lt;/div&gt;&lt;div&gt;2、逐条读取数据，若主键为空，记录该错误；然后对主键进行去重&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="375" y="1519" width="510" height="109" as="geometry" />
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-93" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-89" target="Nk9I9D9MLdTbFCqx6Xnm-92">
@@ -287,8 +287,14 @@
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-100" value="遍历每一个KV，根据传入的写入模式进行节点的导入" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="429" y="2512" width="402" height="71" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-102" value="&lt;div&gt;逐个遍历新节点，如果节点的Source为空（未指定文件）则跳过该节点&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-105" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-102" target="Nk9I9D9MLdTbFCqx6Xnm-104">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-102" value="逐个遍历边，如果边的Source为空（未指定文件）则跳过该边" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1078" y="1412" width="232" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-104" value="如果是替换历史导入，那就先删除旧历史关系" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1078" y="1514" width="232" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
