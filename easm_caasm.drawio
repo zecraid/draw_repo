@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-06T08:51:24.002Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="_Gx7KHg2iBdi6w67O7L6" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-06T09:07:32.372Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="uqw6VCc9VlDeS9_YGGPz" version="24.0.2" type="github">
   <diagram name="第 1 页" id="qW4DOj6AgRY8q806XMH-">
     <mxGraphModel dx="1891" dy="538" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -154,8 +154,20 @@
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-48" value="获取旧边（数据库中）的id-name的映射表oldedgeNames，以及旧边的指向（name-[ ]name）映射表oldedges" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="452.75" y="560" width="211.5" height="54" as="geometry" />
         </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-53" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-50" target="Nk9I9D9MLdTbFCqx6Xnm-52">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-50" value="分析新增关系" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="454.75" y="649.97" width="209" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-55" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-52" target="Nk9I9D9MLdTbFCqx6Xnm-54">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-52" value="获取新边（请求中）的id-name的映射表newedgeNames，以及旧边的指向（name-[ ]name）映射表newedges" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="762" y="650" width="209" height="53" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-54" value="如果某条边的name被修改了，那么就更新为新的name" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="762" y="743" width="209" height="49" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
