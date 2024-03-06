@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-06T06:59:02.191Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="o6F_ZzSmpS1IMOncCyf-" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-06T06:59:57.195Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="G0mF_hMFnEtVS0lxjFVk" version="24.0.2" type="github">
   <diagram name="第 1 页" id="qW4DOj6AgRY8q806XMH-">
     <mxGraphModel dx="1891" dy="538" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -52,7 +52,7 @@
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-15" value="转换节点与边的数据类型" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="13" y="821" width="236" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-17" value="调用biz/vault/model/model.go的UpdateAssetModel()更新资产结构" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-17" value="调用biz/vault/model/model.go的UpdateAssetModel()更新资产结构" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="13" y="926" width="236" height="60" as="geometry" />
         </mxCell>
       </root>
