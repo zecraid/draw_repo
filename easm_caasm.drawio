@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-06T07:34:09.198Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="d1cYG8cNYvIosOIRPOuU" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-06T07:59:39.977Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="DbVo1Cz6jNgmF3iBYg6E" version="24.0.2" type="github">
   <diagram name="第 1 页" id="qW4DOj6AgRY8q806XMH-">
     <mxGraphModel dx="1891" dy="538" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -52,6 +52,9 @@
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-15" value="转换节点与边的数据类型" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="13" y="821" width="236" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-17" target="Nk9I9D9MLdTbFCqx6Xnm-19">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-17" value="调用biz/vault/model/model.go的UpdateAssetModel()更新资产结构" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="13" y="926" width="236" height="60" as="geometry" />
         </mxCell>
@@ -69,11 +72,23 @@
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-20" value="将请求中的节点与最新的资产结构进行对比，&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;找出新增的节点和需要删除的节点&lt;/font&gt;&lt;/b&gt;（最新的资产结构中有，但是请求参数节点中没有）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="393" y="203" width="331" height="75" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-24" value="删除节点数量大于0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="445.25" y="320" width="226.5" height="60" as="geometry" />
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-24" target="Nk9I9D9MLdTbFCqx6Xnm-25">
+          <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-25" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="727" y="317" width="234" height="60" as="geometry" />
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-24" value="删除节点数量大于0" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="445.25" y="328" width="226.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-25" value="跳转执行backupAndReCreateAssetModel，&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;备份且重建资产结构&lt;/b&gt;&lt;/font&gt;&lt;div&gt;1、根据版本软删除资产结构&lt;/div&gt;&lt;div&gt;2、删除后，会&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;回调数据备份与删除现有标签&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;3、创建新的资产结构&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="731" y="328" width="361" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-27" target="Nk9I9D9MLdTbFCqx6Xnm-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-27" value="创建资产结构" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1204" y="39" width="205" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-29" value="根据节点配置构造即将被插入的新节点newNodes" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1204" y="123" width="205" height="45" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
