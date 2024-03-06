@@ -1,23 +1,59 @@
-<mxfile host="app.diagrams.net" modified="2024-03-06T06:32:43.454Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="GpfTlo4muij-1VGKSXK7" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-06T06:59:02.191Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="o6F_ZzSmpS1IMOncCyf-" version="24.0.2" type="github">
   <diagram name="第 1 页" id="qW4DOj6AgRY8q806XMH-">
-    <mxGraphModel dx="1064" dy="538" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1891" dy="538" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-1" target="Nk9I9D9MLdTbFCqx6Xnm-2">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-1" value="根据ctx进行用户验证&lt;div&gt;用于关键操作&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-1" value="根据ctx进行用户验证&lt;div&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;（用于关键操作）&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="71" y="37" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-2" target="Nk9I9D9MLdTbFCqx6Xnm-4">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-2" value="向ctx添加一个RequestID" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-2" value="向ctx添加一个RequestID&lt;div&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;（公用）&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="71" y="140" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-4" value="使用defer跟踪收集可能出现错误的地方" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-4" target="Nk9I9D9MLdTbFCqx6Xnm-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-4" value="使用defer跟踪收集可能出现错误的地方&lt;div&gt;&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;（公用）&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
           <mxGeometry x="71" y="238" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-6" target="Nk9I9D9MLdTbFCqx6Xnm-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-6" value="提取请求体--&amp;gt;&lt;div&gt;nodeConfigs&lt;/div&gt;&lt;div&gt;edgeConfigs&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="71" y="347" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-9" target="Nk9I9D9MLdTbFCqx6Xnm-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-9" value="&lt;font color=&quot;#ff0000&quot;&gt;&lt;b&gt;验证节点有效性&lt;/b&gt;&lt;/font&gt;：&lt;div&gt;1、节点不超过20个&lt;/div&gt;&lt;div&gt;2、节点名称不重复，且小于10个字符&lt;/div&gt;&lt;div&gt;3、如果节点绑定了文件，就判断主键是否绑定列&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-16" y="452" width="294" height="68" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-11" target="Nk9I9D9MLdTbFCqx6Xnm-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-11" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;验证边的有效性&lt;/font&gt;&lt;/b&gt;：&lt;div&gt;1、边名称不为空&lt;/div&gt;&lt;div&gt;2、边的来源和指向不为空&lt;/div&gt;&lt;div&gt;3、如果边绑定了文件，边的来源和指向的节点主键是否绑定列&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-16" y="565" width="294" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-13" target="Nk9I9D9MLdTbFCqx6Xnm-15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-13" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;环检测&lt;/font&gt;&lt;/b&gt;：&lt;div&gt;创建了一个Graph，根据节点和边的信息得到Graph所需的邻接表、各节点的入度表、各结点的出度表。然后从邻接表逐个向下进行dfs，使用visited记录遍历的节点，若再次遍历到相同节点，表示存在环路；反之则不存在&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="-51.5" y="693" width="365" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-15" target="Nk9I9D9MLdTbFCqx6Xnm-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-15" value="转换节点与边的数据类型" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="13" y="821" width="236" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-17" value="调用biz/vault/model/model.go的UpdateAssetModel()更新资产结构" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="13" y="926" width="236" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
