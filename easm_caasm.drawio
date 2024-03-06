@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-06T11:58:07.500Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="Nt1dI3qhlu29qSuiblbN" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-06T12:11:25.366Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="IQn6gh1Lf4SX2Cf5epsD" version="24.0.2" type="github">
   <diagram name="第 1 页" id="qW4DOj6AgRY8q806XMH-">
     <mxGraphModel dx="1891" dy="538" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -55,7 +55,10 @@
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-17" target="Nk9I9D9MLdTbFCqx6Xnm-19">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-17" value="调用biz/vault/model/model.go的UpdateAssetModel()更新资产结构" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-68" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-17" target="Nk9I9D9MLdTbFCqx6Xnm-67">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-17" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;更新资产结构&lt;/font&gt;&lt;/b&gt;，调用biz/vault/model/model.go的UpdateAssetModel()" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
           <mxGeometry x="13" y="926" width="236" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-19" target="Nk9I9D9MLdTbFCqx6Xnm-20">
@@ -203,6 +206,27 @@
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-65" value="更新新增关系：将新边批量导入数据库" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="452.75" y="1151" width="214" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-71" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-67" target="Nk9I9D9MLdTbFCqx6Xnm-69">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-75" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-67" target="Nk9I9D9MLdTbFCqx6Xnm-70">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="305" y="1342" />
+              <mxPoint x="305" y="1292" />
+              <mxPoint x="795" y="1292" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-67" value="写入资产数据，调用biz/vault/graph/ImprtAssetData" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="13" y="1312" width="236" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-69" value="导入节点数据&lt;div&gt;biz/vault/graph/ImprtAssetNode&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="379" y="1312" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-70" value="导入关系数据&lt;div&gt;biz/vault/graph/ImprtAssetRelation&lt;br&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="679" y="1312" width="231" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
