@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-07T05:37:19.065Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="QvqeFRcgX4Xjc55Eufxo" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-07T06:14:43.732Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="zppjRTxsecmsZF1dRcEQ" version="24.0.2" type="github">
   <diagram name="第 1 页" id="qW4DOj6AgRY8q806XMH-">
     <mxGraphModel dx="2079" dy="633" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -302,8 +302,11 @@
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-109" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-106" target="Nk9I9D9MLdTbFCqx6Xnm-108">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-106" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;提取关系数据&lt;/font&gt;&lt;/b&gt;：&lt;div&gt;参数是这条边的from和to&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="1079" y="1615" width="232" height="60" as="geometry" />
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-127" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-106" target="Nk9I9D9MLdTbFCqx6Xnm-126">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-106" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;提取关系数据&lt;/font&gt;&lt;/b&gt;：&lt;div&gt;参数是这条边的from和to，作用是读取文件中关联的列数据，对主键进行去重，最后返回rlations切片（切片的每一个元素就是每一条去重后的数据的from（0）和to（1）&lt;font color=&quot;#009900&quot;&gt;，例如，这条边的from包含1，2字段，to包含3字段，主键去重后5条数据，那么relations大小等于5，里面的每一个元素的[0]是from 的具体数据（1，2字段），[1]是to的具体数据（3字段）&lt;/font&gt;）&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1079" y="1615" width="232" height="165" as="geometry" />
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-111" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-108" target="Nk9I9D9MLdTbFCqx6Xnm-110">
           <mxGeometry relative="1" as="geometry" />
@@ -317,20 +320,56 @@
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-110" value="根据拿到的文件列名从文件中读取对应列的数据rows" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="1400" y="1730" width="233" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-112" target="Nk9I9D9MLdTbFCqx6Xnm-114">
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-115" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-112" target="Nk9I9D9MLdTbFCqx6Xnm-114">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-112" value="逐行读取数据（外层循环）" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-112" value="逐行读取数据（外层循环）" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="1398" y="1834" width="237" height="48" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-114" target="Nk9I9D9MLdTbFCqx6Xnm-116">
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-114" target="Nk9I9D9MLdTbFCqx6Xnm-116">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-114" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;进入内层遍历列数据&lt;/font&gt;&lt;/b&gt;，如果内存列数据为空则跳过该行，然后分别提取出具体的数据值到fromvals和tovals，列名对应属性记录到toprops和fromprops，边指向记录到fromName和toName。&lt;div&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;结束内层循环&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-114" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;进入内层遍历列数据&lt;/font&gt;&lt;/b&gt;，如果内存列数据为空则跳过该行，然后分别提取出具体的数据值到fromvals和tovals，列名对应属性记录到toprops和fromprops，边指向记录到fromName和toName。&lt;div&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;结束内层循环&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="1398" y="1924" width="237" height="92" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-116" value="对比读取的数据和绑定的关系，判断主键是否完全，若主键不完全就跳过该行" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-116" target="Nk9I9D9MLdTbFCqx6Xnm-118">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-116" value="对比读取的数据和绑定的关系，判断主键是否完全，若主键不完全就跳过该行" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
           <mxGeometry x="1399" y="2071" width="237" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-121" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-118" target="Nk9I9D9MLdTbFCqx6Xnm-120">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-118" value="将主键通过下划线进行拼接，去重" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="2172" width="237" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-123" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-120" target="Nk9I9D9MLdTbFCqx6Xnm-124">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="1518.5294117647063" y="2362" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-120" value="将关系的from和to节点写入一个大小为2的数组中，然后append到最终的关系切片relations中" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1400" y="2267" width="237" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-124" value="结束外层循环，返回数据 [ ]relations" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+          <mxGeometry x="1399" y="2372" width="237" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-128" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-126" target="Nk9I9D9MLdTbFCqx6Xnm-102">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="973" y="1873" />
+              <mxPoint x="973" y="1442" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-129" value="继续遍历" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="Nk9I9D9MLdTbFCqx6Xnm-128">
+          <mxGeometry x="0.0691" y="3" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-126" value="导入关系" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1079" y="1841" width="232" height="63" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
