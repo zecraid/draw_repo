@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-07T09:27:50.985Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="Unw-IDxO23lgZclQ1dMV" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-07T09:32:04.061Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="D9TdLRceuJOLi9WAQJle" version="24.0.2" type="github">
   <diagram name="第 1 页" id="qW4DOj6AgRY8q806XMH-">
-    <mxGraphModel dx="2600" dy="2066" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2079" dy="1802" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -444,13 +444,13 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-150" value="获取最新的资产结构" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2442" y="712" width="120" height="60" as="geometry" />
+          <mxGeometry x="3025" y="712" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-152" value="构建出Graph" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2442" y="804" width="120" height="60" as="geometry" />
+          <mxGeometry x="3025" y="804" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-154" value="构建出Graph" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="2442" y="896" width="120" height="60" as="geometry" />
+          <mxGeometry x="3025" y="896" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-158" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-155" target="Nk9I9D9MLdTbFCqx6Xnm-157">
           <mxGeometry relative="1" as="geometry" />
@@ -459,6 +459,9 @@
           <mxGeometry x="2211" y="826.5" width="120" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-160" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-157" target="Nk9I9D9MLdTbFCqx6Xnm-159">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-215" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-157" target="Nk9I9D9MLdTbFCqx6Xnm-214">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-157" value="根据查询条件创建查询引擎" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
@@ -622,6 +625,9 @@
             <mxPoint x="1714" y="4354.609723772322" as="sourcePoint" />
             <mxPoint x="1723" y="-13" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-214" value="计算目标资产" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2599" y="926" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
