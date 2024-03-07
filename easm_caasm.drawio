@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2024-03-07T12:20:47.485Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="13cOXTbQ87YN_7KDZtys" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-07T12:52:32.314Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="LtasDVk7I7BOfPqtb4Lj" version="24.0.2" type="github">
   <diagram name="第 1 页" id="qW4DOj6AgRY8q806XMH-">
-    <mxGraphModel dx="2079" dy="1802" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2347" dy="1938" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -145,7 +145,7 @@
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-49" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-44" target="Nk9I9D9MLdTbFCqx6Xnm-48">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-44" value="将新增节点添加到MySQL中，并且同步更新到资产结构版本表中" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-44" value="&lt;div&gt;&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;新增节点入库&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;将新增节点添加到MySQL中，&lt;u&gt;&lt;font color=&quot;#ff0000&quot;&gt;并且同步更新到资产结构版本表中&lt;/font&gt;&lt;/u&gt;" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="457.5" y="464" width="202" height="55" as="geometry" />
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-47" value="如果有删除节点直接更新资产结构后返回，就不再单独考虑新增节点了；&lt;div&gt;如果没有删除节点，再考虑新增节点的更新&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontColor=#FF0000;" vertex="1" parent="1">
@@ -172,20 +172,16 @@
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-52" value="获取新边（请求中）的id-name的映射表newedgeNames，以及旧边的指向（name-[ ]name）映射表newedges" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="762" y="650" width="209" height="53" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-54" target="Nk9I9D9MLdTbFCqx6Xnm-56">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-57" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-54" target="Nk9I9D9MLdTbFCqx6Xnm-58">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="866.5" y="832" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-54" value="如果某条边的name被修改了，那么就更新为新的name" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="762" y="743" width="209" height="49" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-59" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-56" target="Nk9I9D9MLdTbFCqx6Xnm-58">
-          <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-56" value="如果某条边的name被修改了，那么就更新为新的name" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="762" y="832" width="209" height="49" as="geometry" />
-        </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-58" value="将要添加的边记录到addRelations，这里面的边的from和to都是更新后的节点，然后ID=0" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="762" y="915" width="209" height="49" as="geometry" />
+          <mxGeometry x="762" y="834" width="209" height="49" as="geometry" />
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-60" target="Nk9I9D9MLdTbFCqx6Xnm-62">
           <mxGeometry relative="1" as="geometry" />
@@ -222,7 +218,7 @@
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-77" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-67" target="Nk9I9D9MLdTbFCqx6Xnm-76">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-67" value="写入资产数据，调用biz/vault/graph/ImprtAssetData" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-67" value="写入资产数据，调用biz/vault/graph/ImprtAssetData" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
           <mxGeometry x="13" y="1312" width="236" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-82" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-69" target="Nk9I9D9MLdTbFCqx6Xnm-81">
