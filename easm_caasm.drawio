@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-07T13:19:06.646Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="wNy2dlDCwy1k3MkP3tse" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-07T13:33:56.313Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="-clHooHGGAiYG4xC7oWJ" version="24.0.2" type="github">
   <diagram name="第 1 页" id="qW4DOj6AgRY8q806XMH-">
     <mxGraphModel dx="2347" dy="1938" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -442,6 +442,9 @@
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-150" value="获取最新的资产结构" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="3025" y="712" width="120" height="60" as="geometry" />
         </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-249" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-152" target="Nk9I9D9MLdTbFCqx6Xnm-248">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-152" value="构建出Graph" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="3025" y="804" width="120" height="60" as="geometry" />
         </mxCell>
@@ -725,6 +728,15 @@
             <mxPoint x="3285" y="4358.609723772322" as="sourcePoint" />
             <mxPoint x="3294" y="-9" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-251" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-248" target="Nk9I9D9MLdTbFCqx6Xnm-250">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-248" value="检测是否有跨级资产，例如直接从公司-&amp;gt;漏洞，中间缺少了IP和端口" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3003.5" y="908" width="163" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-250" value="对于额外资产逐个验证，向下查找可达性" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3003.5" y="1009" width="163" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
