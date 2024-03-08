@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-03-07T14:10:12.901Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="CPHBzq5k9QTpHsG9AXhq" version="24.0.2" type="github">
+<mxfile host="app.diagrams.net" modified="2024-03-08T06:20:18.948Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="ep96kFcPogXe9oAfmVef" version="24.0.2" type="github">
   <diagram name="第 1 页" id="qW4DOj6AgRY8q806XMH-">
     <mxGraphModel dx="2347" dy="1938" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -325,7 +325,7 @@
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-117" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-114" target="Nk9I9D9MLdTbFCqx6Xnm-116">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-114" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;进入内层遍历列数据&lt;/font&gt;&lt;/b&gt;，如果内存列数据为空则跳过该行，然后分别提取出具体的数据值到fromvals和tovals，列名对应属性记录到toprops和fromprops，边指向记录到fromName和toName。&lt;div&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;结束内层循环&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" vertex="1" parent="1">
+        <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-114" value="&lt;b&gt;&lt;font color=&quot;#ff0000&quot;&gt;进入内层遍历列数据&lt;/font&gt;&lt;/b&gt;，如果内存列数据为空则跳过该行，然后分别提取出具体的数据值到fromvals和tovals，列名对应属性记录到toprops和fromprops，边指向记录到fromName和toName。&lt;div&gt;&lt;b style=&quot;&quot;&gt;&lt;font color=&quot;#ff0000&quot;&gt;结束内层循环&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" vertex="1" parent="1">
           <mxGeometry x="1398" y="1924" width="237" height="92" as="geometry" />
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-119" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-116" target="Nk9I9D9MLdTbFCqx6Xnm-118">
@@ -410,7 +410,7 @@
           <mxGeometry x="2292.7999999999997" y="362" width="178" height="60" as="geometry" />
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-143" value="key规则：最前面的是节点ID，然后是该节点对应所需的&lt;div&gt;主键值数据，根据不同节点类型有这不同数量的主键类型,&lt;br&gt;这样设计可用于单个节点具体数据的查询&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
-          <mxGeometry x="2436" y="243" width="321" height="55" as="geometry" />
+          <mxGeometry x="2430" y="245" width="321" height="55" as="geometry" />
         </mxCell>
         <mxCell id="Nk9I9D9MLdTbFCqx6Xnm-147" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Nk9I9D9MLdTbFCqx6Xnm-144" target="Nk9I9D9MLdTbFCqx6Xnm-146">
           <mxGeometry relative="1" as="geometry" />
